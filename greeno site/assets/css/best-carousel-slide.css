@@ -47,8 +47,8 @@ p.hero-subtitle {
 }
 
 .btn.btn-primary {
-  background-color: #27b324!important;
-  border-color: #27b324!important;
+  /*background-color: #27b324!important;*/
+  border-color: black;
 }
 
 .btn-primary.focus, .btn-primary:focus {

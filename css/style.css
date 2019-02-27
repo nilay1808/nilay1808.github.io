@@ -4,363 +4,364 @@
 
 */
 
-
 .displaypic {
-
-    border-radius: 50%;
-
+  border-radius: 50%;
 }
 
 .center {
-    margin-top: 25%; 
+  margin-top: 25%;
 }
 
 .one-half.column {
-    padding: 1em;
+  padding: 1em;
 }
 
 .three.columns {
-    padding: 1em;
-    display: inline-block;
+  padding: 1em;
+  display: inline-block;
 }
 
 .two.columns {
-    text-align: right;
+  text-align: right;
 }
 
-
-
 .fullpage {
-    padding-top: 12%;
+  padding-top: 12%;
 }
 
 .fullpage2 {
-    padding-top: 5%;
+  padding-top: 5%;
 }
 
 @media (max-width: 1350px) {
-    .fullpage {
-        padding-top: 10%;
-    }
+  .fullpage {
+    padding-top: 10%;
+  }
 }
 
 @media (max-width: 750px) {
-    .fullpage {
-        padding-top: 5%;
-    }
+  .fullpage {
+    padding-top: 5%;
+  }
 }
 
 @media screen and (max-width: 950px) {
-    .knockout {
-        font-size: 4rem;
-    }
+  .knockout {
+    font-size: 4rem;
+  }
 }
 
 .inline {
-    display: inline-block;float: left;
+  display: inline-block;
+  float: left;
 }
-
-
 
 .knockout {
-    background: url(https://png.pngtree.com/thumb_back/fw800/back_pic/00/07/43/935629e8f694e61.jpg) ;
-    color: rgb(0, 0, 0);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: 600;
-    font-size: 5rem;
-    font-family: 'Sarala', sans-serif;
+  background: url(https://png.pngtree.com/thumb_back/fw800/back_pic/00/07/43/935629e8f694e61.jpg);
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  font-size: 5rem;
+  font-family: "Sarala", sans-serif;
 
-    margin-bottom: 0pt;
-  }
+  margin-bottom: 0pt;
+}
 
- 
+.knockout2 {
+  background: url(https://wallpaperbits.com/wp-content/uploads/2018/04/dark-blue-textured-wallpaper-wallpaper.wiki-art-imges-blue-textured-pic-wpc008988.jpg);
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  font-size: 4.7rem;
+  font-family: "Sarala", sans-serif;
+  margin-bottom: 0pt;
+}
 
+.knockout3 {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLZO8K0Hfdac-LNP75KFy509_uxQum2upeAk5c7gwFzbDPYI-g);
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  font-size: 4.7rem;
+  font-family: "Sarala", sans-serif;
+  margin-bottom: 0pt;
+}
+
+@media screen and (max-width: 980px) {
+  .knockout,
   .knockout2 {
-    background: url(https://wallpaperbits.com/wp-content/uploads/2018/04/dark-blue-textured-wallpaper-wallpaper.wiki-art-imges-blue-textured-pic-wpc008988.jpg);
-    color: rgb(0, 0, 0);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: 600;
-    font-size: 4.7rem;
-    font-family: 'Sarala', sans-serif;
-    margin-bottom: 0pt;
+    font-size: 4rem;
   }
-
-  .knockout3 {
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLZO8K0Hfdac-LNP75KFy509_uxQum2upeAk5c7gwFzbDPYI-g);
-    color: rgb(0, 0, 0);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: 600;
-    font-size: 4.7rem;
-    font-family: 'Sarala', sans-serif;
-    margin-bottom: 0pt;
-  }
-
-  @media screen and (max-width: 980px) {
-      .knockout, .knockout2 {
-          font-size: 4rem;
-      }
-  }
+}
 
 button {
-    margin: 1em;
-    border: 1pt black solid;
-    border-radius: 10%;
+  margin: 1em;
+  border: 1pt black solid;
+  border-radius: 10%;
 }
 
-html, body {
-    height: 100%;
-    margin: 0px;
-    font-family: 'Sarala', sans-serif;
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  font-family: "Sarala", sans-serif;
 
-    /*  Cancel text selection  */
-    -webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-        user-select: none;
-
+  /*  Cancel text selection  */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-    /*   Scrollbar   */
-    ::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-    }
-    ::-webkit-scrollbar-track-piece  {
-        background-color: rgba(255, 255, 255, 0);
-        }
-    ::-webkit-scrollbar-thumb:vertical {
-        height: 20px;
-        background-color: #3272af;
-    }
+/*   Scrollbar   */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 20px;
+  background: url(https://png.pngtree.com/thumb_back/fw800/back_pic/00/07/43/935629e8f694e61.jpg);
+}
 
 ul {
-    font-size: 1.5rem;
-
+  font-size: 1.5rem;
 }
 li {
-    margin-bottom: 0pt;
+  margin-bottom: 0pt;
 }
 
-li>ul {
-    margin: 0.5rem 0 0.5rem 3rem;
+li > ul {
+  margin: 0.5rem 0 0.5rem 3rem;
 }
 
 #light {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 #progressbar {
-    border-radius: 13px;
-    /* (height of inner div) / 2 + padding */
-    padding: 3px;
-  }
-  
-  #progressbar>div {
-    background-color: #3272af;
-    width: 40%;
-    /* Adjust with JavaScript */
-    height: 20px;
-    border-radius: 10px;
-  }
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+
+#progressbar > div {
+  background-color: #3272af;
+  width: 40%;
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+}
 
 #logos {
-    padding-left: 10%;
+  padding-left: 10%;
 }
 
 @media (max-width: 750px) {
-    #logos {
-        padding-left: 0em;
-        display: table-cell;
-    }
+  #logos {
+    padding-left: 0em;
+    display: table-cell;
+  }
 }
 @media (max-width: 780px) {
-#hideonmobile {
+  #hideonmobile {
     display: none;
+  }
 }
-}
-
 
 /* Hang */
 @-webkit-keyframes hvr-hang {
-    0% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
-    50% {
-      -webkit-transform: translateY(4px);
-      transform: translateY(4px);
-    }
-    100% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
   }
-  @keyframes hvr-hang {
-    0% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
-    50% {
-      -webkit-transform: translateY(4px);
-      transform: translateY(4px);
-    }
-    100% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
   }
-  @-webkit-keyframes hvr-hang-sink {
-    100% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
   }
-  @keyframes hvr-hang-sink {
-    100% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
   }
-  .hvr-hang {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
   }
-  .hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
-    -webkit-animation-name: hvr-hang-sink, hvr-hang;
-    animation-name: hvr-hang-sink, hvr-hang;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
-    -webkit-animation-timing-function: ease-out, ease-in-out;
-    animation-timing-function: ease-out, ease-in-out;
-    -webkit-animation-iteration-count: 1, infinite;
-    animation-iteration-count: 1, infinite;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-direction: normal, alternate;
-    animation-direction: normal, alternate;
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
   }
+}
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-hang:hover,
+.hvr-hang:focus,
+.hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
 
 /* Forward */
 .hvr-forward {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  .hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
-    -webkit-transform: translateX(8px);
-    transform: translateX(8px);
-  }
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover,
+.hvr-forward:focus,
+.hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
 
-  /* Grow */
+/* Grow */
 .hvr-grow {
-    
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
-  #hvr-grow {
-    
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  #hvr-grow:hover, #hvr-grow:focus, #hvr-grow:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+#hvr-grow {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+#hvr-grow:hover,
+#hvr-grow:focus,
+#hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
- 
 /* Underline From Left */
 .hvr-underline-from-left {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
-  }
-  .hvr-underline-from-left:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 100%;
-    bottom: 0;
-    background: url(https://wallpaperbits.com/wp-content/uploads/2018/04/dark-blue-textured-wallpaper-wallpaper.wiki-art-imges-blue-textured-pic-wpc008988.jpg);
-    height: 4px;
-    -webkit-transition-property: right;
-    transition-property: right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
-    right: 0;
-  }
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: url(https://wallpaperbits.com/wp-content/uploads/2018/04/dark-blue-textured-wallpaper-wallpaper.wiki-art-imges-blue-textured-pic-wpc008988.jpg);
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
+}
 
-  .hvr-underline-from-left>a, a:hover {
-      color: black;
-      text-decoration: none;
-  }
+.hvr-underline-from-left > a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
 
-  /* Pop */
+/* Pop */
 @-webkit-keyframes hvr-pop {
-    50% {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
-  @keyframes hvr-pop {
-    50% {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
-  #hvr-pop {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  #hvr-pop:hover, #hvr-pop:focus, #hvr-pop:active {
-    -webkit-animation-name: hvr-pop;
-    animation-name: hvr-pop;
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.3s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-  }
+}
+#hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+#hvr-pop:hover,
+#hvr-pop:focus,
+#hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}

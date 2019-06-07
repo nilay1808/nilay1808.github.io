@@ -1,4 +1,4 @@
-# Problems with creative-ventures.in
+# Problems with `creative-ventures.in`
 
 This contains a list of design and technical problems with the website- `creative-ventures.in`
 
@@ -15,7 +15,7 @@ This contains a list of design and technical problems with the website- `creativ
     1. Page failed to load image and contents on `/index.html`. ![](images/1.png)
 
 4. Improper Alignment
-    - On `/index.html` the Tablets version of the website does not properly align the 3 elements. The 3rd element is off-set to the right where as it should either be centered or the 3 elements should be resized to fit on the same line. ![](/images/2.png)
+    - On `/index.html` the Tablets version of the website does not properly align the 3 elements. The 3rd element is off-set to the right where as it should either be centered or the 3 elements should be resized to fit on the same line. ![](images/2.png)
     - Similar problem with the _Work Process_ element. The 5th element needs to centered.
 
 5. Font Sizing errors
@@ -26,7 +26,7 @@ This contains a list of design and technical problems with the website- `creativ
     - Multiple occurances of use of additional `letter-spacing` for paragraph elements on `/about.html`. The additional letter spacing makes that part look extremely ugly and there are multiple other ways to highlight certain text without making it look like a misfit.
 
 2. Improper scaling
-    - The page does not scale properly for smaller screen sizes. There are certain elements on the page which cause it to become a bit wider on the right side causing a small gap. ![](/images/3.png)
+    - The page does not scale properly for smaller screen sizes. There are certain elements on the page which cause it to become a bit wider on the right side causing a small gap. ![](images/3.png)
 
 ### Projects - All 3 pages    
 1. Grid Issues
@@ -34,7 +34,7 @@ This contains a list of design and technical problems with the website- `creativ
 
 ### Contact
 1. Grid Issues
-    - The grid is not optimized for tablet devices and as a result displays the content upoptimally. ![](/images/4.png) The 3 elements could fit inline with some optimization.
+    - The grid is not optimized for tablet devices and as a result displays the content upoptimally. ![](images/4.png) The 3 elements could fit inline with some optimization.
 
 
 ### Other Misc. Problems
@@ -42,9 +42,9 @@ This contains a list of design and technical problems with the website- `creativ
  - The performance for the mobile version of the website is poor (~73/100) on Google Page Speed Insights
  - Report
     - Home- [link](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcreative-ventures.in%2F&tab=mobile)
-    - About- [link](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcreative-ventures.in%2F&tab=mobile)
-    - Project- [link](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcreative-ventures.in%2F&tab=mobile)
-    - Contact- [link](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcreative-ventures.in%2F&tab=mobile)
+    - About- [link](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcreative-ventures.in%2Fabout-us%2F&tab=mobile)
+    - Project- [link](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcreative-ventures.in%2Farchitectural-projects%2F)
+    - Contact- [link](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcreative-ventures.in%2Fcontact-us%2F)
 
 2. Redundant Pages
     - The page `/blog.html` is not used and is completely redundant. All mentions of the page from the navbars must be removed and also the footer section which highlights blog posts is unnecessary.

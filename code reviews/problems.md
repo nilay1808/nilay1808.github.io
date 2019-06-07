@@ -12,7 +12,7 @@ This contains a list of design and technical problems with the website- `creativ
     - The font for the numbers in the `Counter Area` on `/index.html` mismatches with the rest of the font styling.
 
 3. Errors in loding content
-    1. Page failed to load image and contents on `/index.html`. ![](images/1.png)
+    1. Page failed to load image and contents on `/index.html`. ![](images/1.png =250x)
 
 4. Improper Alignment
     - On `/index.html` the Tablets version of the website does not properly align the 3 elements. The 3rd element is off-set to the right where as it should either be centered or the 3 elements should be resized to fit on the same line. ![](images/2.png)

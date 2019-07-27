@@ -26,3 +26,9 @@
   box-shadow: 10px 10px 5px #aaaaaa;
 }
 
+.display-4 {
+  font-size: 3.2rem !important;
+  font-weight: 300;
+  line-height: 1.2;
+}
+

@@ -1,3 +1,13 @@
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #ffffff;
+    color: #444452;
+}
+
+.fullpage {
+    min-height: 100vh;
+}
+
 /*  The switch - the box around the slider  */
 
 .switch {

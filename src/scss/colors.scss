@@ -1,0 +1,17 @@
+// Theme colors
+$white-color: #ffffff;
+$text-color: #444452;
+$linkedin: #2867b2;
+$github: #24292e;
+$resume: #b23121;
+$email: #0e8f0b;
+
+// the :export directive is the magic sauce for webpack
+:export {
+    whitecolor: $white-color;
+    textcolor: $text-color;
+    linkedin: $linkedin;
+    github: $github;
+    resume: $resume;
+    email: $email;
+}

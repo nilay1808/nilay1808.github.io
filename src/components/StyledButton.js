@@ -3,7 +3,6 @@ import React, { Component } from "react";
 
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 // React Bootstrap
 import Button from "react-bootstrap/Button";
@@ -11,11 +10,8 @@ import Button from "react-bootstrap/Button";
 // Modified Bootstrap Modal
 import MailModal from "./MailModal";
 
-// CSS
-import colors from "../scss/colors.scss";
-
-// Email Button Class
-class Email extends Component {
+// Styled Button Class
+class StyledButton extends Component {
     state = {
         hover: false,
         show: false
@@ -37,19 +33,24 @@ class Email extends Component {
         this.setState({ show: false });
     };
 
+    // Open links
+    goToUrl = url => {
+        window.open(url);
+    };
+
     render() {
         // Configure style for steady and hover states
         if (this.state.hover) {
             style = {
                 ...style,
-                color: colors.whitecolor,
-                background: colors.email
+                color: this.props.secondaryColor,
+                background: this.props.primaryColor
             };
         } else {
             style = {
                 ...style,
-                color: colors.email,
-                background: colors.whitecolor
+                color: this.props.primaryColor,
+                background: this.props.secondaryColor
             };
         }
 
@@ -58,12 +59,18 @@ class Email extends Component {
                 <div>
                     <Button
                         style={style}
-                        onClick={this.handleOpen}
+                        onClick={
+                            this.props.text === "Email"
+                                ? this.handleOpen
+                                : () => {
+                                      this.goToUrl(this.props.url);
+                                  }
+                        }
                         onMouseEnter={this.hoverOn}
                         onMouseLeave={this.hoverOff}
                     >
-                        <FontAwesomeIcon icon={faFile} style={margin} />
-                        Email
+                        <FontAwesomeIcon icon={this.props.icon} />
+                        &nbsp;&nbsp;{this.props.text}
                     </Button>
                 </div>
 
@@ -76,18 +83,16 @@ class Email extends Component {
     }
 }
 
-const margin = {
-    marginLeft: "10px",
-    marginRight: "10px"
-};
-
 var style = {
     textDecoration: "none",
     borderRadius: "5px",
     border: "none",
     transition: "0.5s",
-    margin: "10px",
-    padding: "10px"
+    paddingTop: "10px",
+    paddingBottom: "10px",
+    paddingLeft: "15px",
+    paddingRight: "15px",
+    fontSize: "13.5pt"
 };
 
-export default Email;
+export default StyledButton;

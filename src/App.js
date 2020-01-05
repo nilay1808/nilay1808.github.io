@@ -7,15 +7,19 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 
-// Custom Button Components
-import LinkedIn from "./components/LinkedIn";
-import Github from "./components/Github";
-import Email from "./components/Email";
-import Resume from "./components/Resume";
+// Custom Button Component
+import StyledButton from "./components/StyledButton";
 
 // CSS
 import "bootstrap/dist/css/bootstrap.css";
 import "./scss/App.scss";
+import colors from "./scss/colors.scss";
+
+// Font Awesome Icons
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 class App extends Component {
     render() {
@@ -76,16 +80,56 @@ class App extends Component {
                                     </Row>
                                     <Row style={middle}>
                                         <Col xs={6} md={3} style={textMiddle}>
-                                            <LinkedIn />
+                                            <StyledButton
+                                                icon={faLinkedin}
+                                                url={
+                                                    "https://linkedin.com/in/nsadavarte"
+                                                }
+                                                text={"LinkedIn"}
+                                                primaryColor={colors.linkedin}
+                                                secondaryColor={
+                                                    colors.whitecolor
+                                                }
+                                            />
                                         </Col>
                                         <Col xs={6} md={3} style={textMiddle}>
-                                            <Github />
+                                            <StyledButton
+                                                icon={faGithub}
+                                                url={
+                                                    "https://github.com/nilay1808"
+                                                }
+                                                text={"Github"}
+                                                primaryColor={colors.github}
+                                                secondaryColor={
+                                                    colors.whitecolor
+                                                }
+                                            />
                                         </Col>
                                         <Col xs={6} md={3} style={textMiddle}>
-                                            <Email />
+                                            <StyledButton
+                                                icon={faEnvelope}
+                                                url={
+                                                    "mailto:nilay18sadavarte@gmail.com"
+                                                }
+                                                text={"Email"}
+                                                primaryColor={colors.email}
+                                                secondaryColor={
+                                                    colors.whitecolor
+                                                }
+                                            />
                                         </Col>
                                         <Col xs={6} md={3} style={textMiddle}>
-                                            <Resume />
+                                            <StyledButton
+                                                icon={faFile}
+                                                url={
+                                                    "/NilaySadavarteResume.pdf"
+                                                }
+                                                text={"Resume"}
+                                                primaryColor={colors.resume}
+                                                secondaryColor={
+                                                    colors.whitecolor
+                                                }
+                                            />
                                         </Col>
                                     </Row>
                                 </div>
@@ -105,12 +149,12 @@ const middle = {
 };
 
 const textMiddle = {
-    textAlign: "center"
+    textAlign: "left"
 };
 
 const imgSize = {
-    width: "270px",
-    padding: "1em"
+    width: "300px",
+    padding: "1.5em"
 };
 
 export default App;

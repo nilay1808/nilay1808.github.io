@@ -77,3 +77,4 @@ resume/*.aux
 resume/*.fdb_latexmk
 resume/*.fls
 resume/*.gz
+resume/*.pdf

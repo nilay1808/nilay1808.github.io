@@ -19,7 +19,7 @@ jobs:
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@master
       with:
-          root_file: .resume/resume.tex
+          root_file: ../../resume/resume.tex
     - run: npm install
     - run: npm run build
     - uses: w9jds/firebase-action@master

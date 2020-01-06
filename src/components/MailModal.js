@@ -37,7 +37,6 @@ class MailModal extends Component {
         };
 
         // Assume valid and no errors.
-        let valid = true;
         let newErr = [];
 
         // Check for email validation
@@ -45,30 +44,23 @@ class MailModal extends Component {
             variables.from_email === "" ||
             !this.validateEmail(variables.from_email)
         ) {
-            valid = false;
             newErr.push("Email");
         }
-
         // Check for name validation
         if (variables.from_name === "" || variables.from_name.length < 3) {
-            valid = false;
             newErr.push("Name");
         }
-
         // Check for subject validation
         if (variables.subject === "" || variables.subject.length < 5) {
-            valid = false;
             newErr.push("Subject");
         }
-
         // Check for body validation
         if (variables.body === "" || variables.body.length < 10) {
-            valid = false;
             newErr.push("Message");
         }
 
-        // Try sending if all fields are valid
-        if (valid) {
+        // Try sending if no errors
+        if (newErr.length === 0) {
             this.sendEmail(templateId, variables);
         }
         // Show invalid fields
@@ -77,6 +69,7 @@ class MailModal extends Component {
         }
     };
 
+    // Connects with EmailJS server and attemps to send an email
     sendEmail = (templateId, variables) => {
         window.emailjs
             .send("mailgun", templateId, variables)
@@ -92,33 +85,35 @@ class MailModal extends Component {
             });
     };
 
-    validateEmail = x => {
-        let atPosition = x.indexOf("@");
-        let dotPosition = x.lastIndexOf(".");
-        if (
+    // Validates an input email
+    validateEmail = email => {
+        let atPosition = email.indexOf("@");
+        let dotPosition = email.lastIndexOf(".");
+        return !(
             atPosition < 1 ||
             dotPosition < atPosition + 2 ||
-            dotPosition + 2 >= x.length
-        ) {
-            return false;
-        }
-        return true;
+            dotPosition + 2 >= email.length
+        );
     };
 
+    // UI Feedback helper functions for success
     showSuccess = async () => {
         this.setState({ sent: true, success: true });
         await this.delay(2500);
         this.close();
     };
 
+    // UI Feedback helper functions for failure
     showFailure = async () => {
         this.setState({ sent: true, success: false });
         await this.delay(3500);
         this.close();
     };
 
+    // Helper function to hold modal for certain amount of time
     delay = ms => new Promise(res => setTimeout(res, ms));
 
+    // Helper function to close the modal
     close = () => {
         this.props.handleClose();
     };
@@ -143,37 +138,12 @@ class MailModal extends Component {
                 <Modal.Header closeButton>
                     <Modal.Title>New Email to Nilay Sadavarte</Modal.Title>
                 </Modal.Header>
-                <Modal.Body
-                    style={
-                        this.state.sent
-                            ? {
-                                  display: "flex",
-                                  alignItems: "center",
-                                  justifyContent: "center"
-                              }
-                            : {}
-                    }
-                >
-                    <div
-                        style={
-                            this.state.sent
-                                ? { display: "none" }
-                                : { display: "show" }
-                        }
-                    >
-                        <div
-                            style={
-                                !this.state.valid
-                                    ? {
-                                          display: "flex"
-                                      }
-                                    : { display: "none" }
-                            }
-                        >
+                <Modal.Body style={this.state.sent ? center : {}}>
+                    <div style={this.state.sent ? none : {}}>
+                        <div style={!this.state.valid ? flexCenter : none}>
                             <div
                                 style={{
-                                    textAlign: "left",
-                                    transition: "0.5s"
+                                    textAlign: "left"
                                 }}
                             >
                                 <h5 className={"text-warning"}>
@@ -216,15 +186,12 @@ class MailModal extends Component {
                             </InputGroup.Prepend>
                             <Form.Control
                                 placeholder="Enter the subject"
-                                aria-label="subject"
-                                aria-describedby="basic-addon1"
                                 onChange={this.onChangeSubject}
                             />
                         </InputGroup>
                         <InputGroup>
                             <Form.Control
                                 as="textarea"
-                                aria-label="With textarea"
                                 placeholder="Enter the message"
                                 rows="4"
                                 onChange={this.onChangeBody}
@@ -234,16 +201,13 @@ class MailModal extends Component {
                     <div
                         style={
                             this.state.sent && this.state.success
-                                ? {
-                                      display: "flex"
-                                  }
-                                : { display: "none" }
+                                ? flexCenter
+                                : none
                         }
                     >
                         <div
                             style={{
-                                textAlign: "center",
-                                transition: "0.5s"
+                                textAlign: "center"
                             }}
                         >
                             <h2 className={"text-success"}>
@@ -255,14 +219,13 @@ class MailModal extends Component {
                     <div
                         style={
                             this.state.sent && !this.state.success
-                                ? { display: "flex", alignItems: "center" }
-                                : { display: "none" }
+                                ? flexCenter
+                                : none
                         }
                     >
                         <div
                             style={{
-                                textAlign: "center",
-                                transition: "0.5s"
+                                textAlign: "center"
                             }}
                         >
                             <h2 className={"text-danger"}>
@@ -292,5 +255,20 @@ class MailModal extends Component {
         );
     }
 }
+
+const center = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+};
+
+const flexCenter = {
+    display: "flex",
+    alignItems: "center"
+};
+
+const none = {
+    display: "none"
+};
 
 export default MailModal;

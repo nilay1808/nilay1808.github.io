@@ -71,3 +71,9 @@ node_modules/
 *.bsdesign
 
 build/
+
+# Latex files
+resume/*.aux
+resume/*.fdb_latexmk
+resume/*.fls
+resume/*.gz

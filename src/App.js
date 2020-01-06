@@ -19,7 +19,7 @@ import colors from "./scss/colors.scss";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faFile } from "@fortawesome/free-solid-svg-icons";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 class App extends Component {
     render() {
@@ -120,7 +120,7 @@ class App extends Component {
                                         </Col>
                                         <Col xs={6} md={3} style={textMiddle}>
                                             <StyledButton
-                                                icon={faFile}
+                                                icon={faFilePdf}
                                                 url={
                                                     "/NilaySadavarteResume.pdf"
                                                 }

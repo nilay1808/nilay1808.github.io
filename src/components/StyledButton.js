@@ -88,7 +88,7 @@ var style = {
     borderRadius: "5px",
     border: "none",
     transition: "0.5s",
-    paddingTop: "10px",
+    paddingTop: "11px",
     paddingBottom: "8px",
     paddingLeft: "10px",
     paddingRight: "10px"

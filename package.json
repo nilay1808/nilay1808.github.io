@@ -1,6 +1,7 @@
 {
     "name": "myapp",
     "version": "0.1.0",
+    "homepage": "http://nilay1808.github.io/myapp",
     "private": true,
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.26",

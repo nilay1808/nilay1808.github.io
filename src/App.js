@@ -98,7 +98,7 @@ class App extends Component {
                                                 url={
                                                     "https://github.com/nilay1808"
                                                 }
-                                                text={"Github"}
+                                                text={"GitHub"}
                                                 primaryColor={colors.github}
                                                 secondaryColor={
                                                     colors.whitecolor

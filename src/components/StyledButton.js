@@ -17,7 +17,7 @@ class StyledButton extends Component {
         show: false
     };
 
-    // Hover functions for the button
+    // Hover handler functions for the button
     hoverOn = () => {
         this.setState({ hover: true });
     };
@@ -25,7 +25,7 @@ class StyledButton extends Component {
         this.setState({ hover: false });
     };
 
-    // Open/Close functions for the modal
+    // Open/Close handler functions for Mail Module
     handleOpen = () => {
         this.setState({ show: true });
     };
@@ -39,20 +39,18 @@ class StyledButton extends Component {
     };
 
     render() {
-        // Configure style for steady and hover states
-        if (this.state.hover) {
-            style = {
-                ...style,
-                color: this.props.secondaryColor,
-                background: this.props.primaryColor
-            };
-        } else {
-            style = {
-                ...style,
-                color: this.props.primaryColor,
-                background: this.props.secondaryColor
-            };
-        }
+        // Configure style colors for steady and hover states
+        this.state.hover
+            ? (style = {
+                  ...style,
+                  color: this.props.secondaryColor,
+                  background: this.props.primaryColor
+              })
+            : (style = {
+                  ...style,
+                  color: this.props.primaryColor,
+                  background: this.props.secondaryColor
+              });
 
         return (
             <>
@@ -74,6 +72,7 @@ class StyledButton extends Component {
                     </Button>
                 </div>
 
+                {/* Optional Modal used for sending emails */}
                 <MailModal
                     show={this.state.show}
                     handleClose={this.handleClose}
@@ -83,16 +82,17 @@ class StyledButton extends Component {
     }
 }
 
+// Button Styling
 var style = {
     textDecoration: "none",
     borderRadius: "5px",
     border: "none",
     transition: "0.5s",
     paddingTop: "10px",
-    paddingBottom: "10px",
-    paddingLeft: "15px",
-    paddingRight: "15px",
-    fontSize: "13.5pt"
+    paddingBottom: "8px",
+    paddingLeft: "10px",
+    paddingRight: "10px"
+    // fontSize: "13.5pt"
 };
 
 export default StyledButton;

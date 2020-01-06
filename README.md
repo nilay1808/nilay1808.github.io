@@ -4,7 +4,7 @@ This repo consists of my current and all previous versions of my personal websit
 
 ## Current Version
 
-[![Actions Status](https://github.com/{nilay1808}/{nilay1808.github.io}/workflows/{main.yml}/badge.svg)](https://github.com/{nilay1808}/{nilay1808.github.io}/actions)
+[![Actions Status](https://github.com/nilay1808/nilay1808.github.io/workflows/CI/badge.svg)](https://github.com/nilay1808/nilay1808.github.io/actions)
 
 The version is made with React and uses GitHub Actions for CI and is deployed on Firebase. A part of the current version also includes my Resume in LaTeX.
 

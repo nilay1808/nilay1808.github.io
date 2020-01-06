@@ -17,7 +17,9 @@ jobs:
       with:
         node-version: '10.x'
     - name: Compile LaTeX document
-      uses: dante-ev/latex-action@master
+      uses: xu-cheng/latex-action@master -xelatex
+      with:
+          root_file: .resume/resume.tex
     - run: npm install
     - run: npm run build
     - uses: w9jds/firebase-action@master

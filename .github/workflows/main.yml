@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: '10.x'
     - name: Compile LaTeX document
-      uses: xu-cheng/latex-action@master -xelatex
+      uses: xu-cheng/latex-action@master
       with:
           root_file: .resume/resume.tex
     - run: npm install

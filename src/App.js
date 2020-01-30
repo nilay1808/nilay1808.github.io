@@ -33,6 +33,7 @@ class App extends Component {
                                     src="img/me.jpg"
                                     style={imgSize}
                                     roundedCircle
+                                    alt="My Picture"
                                 />
                             </Col>
                             <Col sm={12} md={12} lg={8}>

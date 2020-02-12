@@ -115,24 +115,64 @@
         <div class="row d-sm-flex justify-content-sm-center">
             <div class="col-sm-7 col-md-5 col-lg-4">
                 <div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card" style="margin-bottom: 20px;">
-                                <div class="card-body">
-                                    <div>
-                                        <div>
-                                            <h4>Announcements</h4>
+                    <div class="card" style="margin-bottom: 20px;">
+                        <div class="card-body">
+                            <div>
+                                <div id="open-close-sign" onload="timing.js">
+                                    <!-- Timing Status comes in here -->
+                                </div>
+                                <div>
+                                    <p style="margin-bottom: 0px;font-weight: bold;">
+                                        Address-
+                                    </p>
+                                    <p style="margin-bottom: 0px;">
+                                        10th Floor,
+                                    </p>
+                                    <p>W.E.B Du Bois Library</p>
+                                </div>
+                                <div>
+                                    <p style="margin-bottom: 0px;font-weight: bold;">
+                                        Contact-
+                                    </p>
+                                    <p style="margin-bottom: 0px;">
+                                        <a href="callto:4135455334">(413)-545-5334</a>
+                                    </p>
+                                    <p>
+                                        <a href="mailto:ours@umass.edu">ours@umass.edu</a>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p style="margin-bottom: 0px;font-weight: bold;">
+                                        Schedule-
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-6 col-md-5 col-lg-5">
+                                            <p style="margin: 0px;">
+                                                Mon - Thu
+                                            </p>
                                         </div>
-                                        <div>
-                                            <ul>
-                                                <li>To book an appointment with an OURS Research Mentor or Staff Person, please click on the Make an Appointment Button.</li>
-                                            </ul>
+                                        <div class="col">
+                                            <p style="margin: 0px;">
+                                                9AM - 5PM
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 col-md-5 col-lg-5">
+                                            <p style="margin: 0px;">Fri</p>
+                                        </div>
+                                        <div class="col">
+                                            <p style="margin: 0px;">
+                                                9AM - 4PM
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
                     <div class="row" style="margin-bottom: 20px;">
                         <div class="col d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center">
                             <button class="btn btn-primary btn-lg" type="button">Make an Appointment</button></div>
@@ -154,6 +194,24 @@
                                     are also supported in preparing for and navigating the application process for research and scholarly opportunities.<br></p>
                                 <p>We meet students in a one on one capacity. For a one-on-one meeting: fill out our <a href="https://www.umass.edu/ours/ours_form.html">short form</a>, email us at ours@acad.umass.edu, or visit us on the 10th floor of the
                                     W. E. B. Du Bois Library.<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-body">
+                        <div>
+                            <div>
+                                <h4>Announcements</h4>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>To book an appointment with an OURS Research Mentor or Staff Person, please click on the Make an Appointment Button.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -515,6 +573,71 @@
     <script src="assets/js/Animated-numbers-section.js"></script>
     <script src="assets/js/Card-Carousel.js"></script>
     <script src="assets/js/mobile.js"></script>
+    <script>
+        let openText = `<div class="d-flex d-lg-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="height: 4em; margin-bottom: 16px; border-radius: 1em; background: rgb(13,212,11); background: linear-gradient(135deg, rgba(13,212,11,1) 0%, rgba(86,209,11,1) 100%);"><h3 style="color: #37434d;font-weight: bold;margin-bottom: 0px;">OPEN</h3></div>`;
+
+        let closedText = `<div class="d-flex d-lg-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="height: 4em; margin-bottom: 16px; border-radius: 1em; background: rgb(13,212,11); background: linear-gradient(135deg, rgb(212,23,11) 0%, rgb(209,23,11) 100%); color: rgb(255,255,255);"><h3 style="font-weight: bold;margin-bottom: 0px;">CLOSED</h3></div>`;
+
+        var lrc_open = true;
+        var summer_hours = false; // If true, changes the OPEN/CLOSED sign to our summer hours M-F, 9-5.
+
+        var date = new Date();
+        var day_of_week = date.getDay(); // Sunday --> 0, Monday --> 1, ..., Saturday --> 6.
+        var hour = date.getHours();
+        var minute = date.getMinutes();
+
+        if (summer_hours) {
+            /* Close on Saturday and Sunday */
+            if (day_of_week == 6 || day_of_week == 0) {
+                lrc_open = false;
+            }
+            /* Close if not between 9-5 */
+            // if (hour < 9 || hour >= 17) {
+            //     lrc_open = false;
+            // }
+            else if (
+                day_of_week == 4 ||
+                day_of_week == 1 ||
+                day_of_week == 2
+            ) {
+                if (hour < 9 || hour >= 19) {
+                    console.log(1);
+                    lrc_open = false;
+                }
+            } else {
+                if (hour < 9 || hour >= 17) {
+                    console.log(2);
+                    lrc_open = false;
+                }
+            }
+        } else {
+            /* Close on Saturday */
+            if (day_of_week == 6) {
+                lrc_open = false;
+            } else {
+                if (day_of_week == 0) {
+                    if (hour < 15 || hour >= 22) {
+                        lrc_open = false;
+                    }
+                } else if (day_of_week == 5) {
+                    if (hour < 13 || hour >= 16) {
+                        lrc_open = false;
+                    }
+                } else if (hour < 13 || hour >= 22) {
+                    lrc_open = false;
+                }
+            }
+        }
+        console.log("Hello smarty!");
+
+        if (lrc_open) {
+            document.getElementById("open-close-sign").innerHTML = openText;
+        } else {
+            document.getElementById(
+                "open-close-sign"
+            ).innerHTML = closedText;
+        }
+    </script>
 </body>
 
 </html>

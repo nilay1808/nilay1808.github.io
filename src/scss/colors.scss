@@ -5,6 +5,7 @@ $linkedin: #2867b2;
 $github: #24292e;
 $resume: #b23121;
 $email: #0b6d09;
+$meeting: #00A2FF;
 
 // the :export directive is the magic sauce for webpack
 :export {
@@ -14,4 +15,5 @@ $email: #0b6d09;
     github: $github;
     resume: $resume;
     email: $email;
+    meeting: $meeting
 }

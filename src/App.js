@@ -69,7 +69,7 @@ class App extends Component {
                                                     fontSize: "1.4rem",
                                                     lineHeight: "1.5"
                                                 }}
-                                            >
+                                            > 
                                                 I'm&nbsp;
                                                 <strong>Nilay Sadavarte</strong>
                                                 , an aspiring full-stack

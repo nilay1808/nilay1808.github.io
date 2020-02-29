@@ -72,6 +72,9 @@ node_modules/
 
 build/
 
+# Webstorm Settings
+.idea/
+
 # Latex files
 resume/*.aux
 resume/*.fdb_latexmk

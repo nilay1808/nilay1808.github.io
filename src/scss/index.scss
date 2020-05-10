@@ -48,3 +48,17 @@ span.wave {
         transform: rotate(0deg);
     }
 }
+
+span.bounce {
+    animation-name: bounce;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ }

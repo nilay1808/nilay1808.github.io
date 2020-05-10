@@ -68,7 +68,8 @@ class StyledButton extends Component {
                         onMouseLeave={this.hoverOff}
                     >
                         <FontAwesomeIcon icon={this.props.icon} />
-                        &nbsp;&nbsp;{this.props.text}
+                        {this.props.text === "" ? "" : "  " + this.props.text}
+                        {/* &nbsp;&nbsp;{this.props.text} */}
                     </Button>
                 </div>
 
@@ -90,8 +91,8 @@ var style = {
     transition: "0.5s",
     paddingTop: "11px",
     paddingBottom: "8px",
-    paddingLeft: "10px",
-    paddingRight: "10px"
+    paddingLeft: "14px",
+    paddingRight: "14px"
     // fontSize: "13.5pt"
 };
 

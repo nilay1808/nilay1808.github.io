@@ -9,7 +9,7 @@ import Image from "react-bootstrap/Image";
 
 // Custom Components
 import StyledButton from "./components/StyledButton";
-import ProjectDisplay from "./components/ProjectDisplay";
+// import ProjectDisplay from "./components/ProjectDisplay";
 
 // CSS
 import "bootstrap/dist/css/bootstrap.css";
@@ -28,10 +28,10 @@ class App extends Component {
 			<div className="App">
 				<Container style={{ ...middle, ...{ minHeight: "90vh" } }}>
 					<div style={{ padding: "0.5em" }}>
-						<Row>
+						<Row style={{ marginBottom: "18px" }}>
 							<Col sm={6} md={12} lg={4} style={middle}>
 								<Image
-									src="img/me3.jpg"
+									src="img/me.jpg"
 									style={imgSize}
 									roundedCircle
 									alt="My Picture"
@@ -139,8 +139,8 @@ class App extends Component {
 						</Row>
 					</div>
 				</Container>
-				<Container style={{ minHeight: "10vh" }}>
-					<Row className="justify-content-md-center">
+				{/* <Container style={{ minHeight: "10vh", marginTop: "40px" }}>
+					<Row className="justify-content-center">
 						<h1>
 							<span
 								className="bounce"
@@ -152,7 +152,7 @@ class App extends Component {
 						</h1>
 					</Row>
 				</Container>
-				<ProjectDisplay />
+				<ProjectDisplay /> */}
 			</div>
 		);
 	}

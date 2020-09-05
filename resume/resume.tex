@@ -1,138 +1,263 @@
-\documentclass[margin,line]{resume}
-\usepackage[hidelinks]{hyperref}
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{enumitem}
+\setlist{leftmargin=6mm}
+
+
+% \renewcommand{\familydefault}{\sfdefault}
+
+% \usepackage[T1]{fontenc}
+% \usepackage{newpxtext,eulerpx}
+
+% \usepackage{TheanoModern}
+% \usepackage[T1]{fontenc}
+
+% \usepackage{lmodern}
+% \usepackage[T1]{fontenc}
+
+\usepackage{XCharter}
+\usepackage[T1]{fontenc}
+
+
+% Remove for default page margins
+\usepackage[left=2.45cm, right=3.05cm, top=2.75cm, bottom=2.75cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNew}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small#2  \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingNew}[2]{
+  \vspace{-5pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}\\ \vspace{1mm}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItemNew}[1]{\resumeItemNew{#1}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
-\name{\LARGE{Nilay Sadavarte}}
-\begin{resume}
-    \section{\mysidestyle Contact\\Information}
 
-    Phone: (413) 461-6925     \hfill Website: \url{www.nilaysadavarte.com}
-    \\
-    \noindent Email: nilay18sadavarte@gmail.com  \hfill LinkedIn: \url{www.linkedin.com/in/nsadavarte}
-    \\
-    \vspace{-4.5mm}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://nilaysadavarte.com/}{\LARGE Nilay Sadavarte}} & 
+  Email : \href{mailto:nilay18sadavarte@gmail.com}{\fontfamily{cmtt}\selectfont nilay18sadavarte@gmail.com}
+  \\
+  Mobile : \fontfamily{cmtt}\selectfont (413)-461-6925 &
+  GitHub: \href{https://www.github.com/nilay1808/}{\fontfamily{cmtt}\selectfont github.com/nilay1808}
+%   LinkedIn: \href{https://www.linkedin.com/in/nsadavarte/}{\fontfamily{cmtt}\selectfont linkedin.com/in/nsadavarte}
+%   \\
+%   Website : \href{https://www.nilaysadavarte.com}{\fontfamily{cmtt}\selectfont nilaysadavarte.com} &
+%   GitHub: \href{https://www.github.com/nilay1808/}{\fontfamily{cmtt}\selectfont github.com/nilay1808}
+\end{tabular*}
 
-    % Education
-    \section{\mysidestyle Education}
 
-    \textbf{University of Massachusetts, Amherst} \hfill Amherst, MA
-    \\
-    \textsl{Bachelor of Science in Computer Science; Minor: Mathematics} \hfill \textsl{Aug 2017 -- Dec 2020} 
-    \\
-    • GPA 3.48; Dean’s List; Commonwealth Honors College;
-    \\
-    • Chancellor’s Scholarship; Outstanding Leadership Award (2018, 2019)
-    % \\
-    % • Relevant Coursework:
-    % \\
-    % \hphantom{5mm} \textit{Software Engineering \& Design, Database Systems, Algorithms, Systems Programming, Discrete Math \& Computation, Math Modeling, Functional Programming, Statistics, Calculus, Data Structures}
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {University of Massachusetts, Amherst}{Amherst, MA}
+        {Bachelor of Science in Computer Science; Minor: Mathematics}{Aug 2017 -- May 2021}
+        \resumeItemListStart
+            \resumeItemNew
+              {GPA: 3.57; Commonwealth Honors College; Chancellor’s Scholarship}
+            \resumeItemNew
+              {Dean’s List; Outstanding Leadership Award (2018, 2019), Homecoming Court Royalty}
+            \resumeItemNew
+            {Honors Thesis: Impact of Knowledge Graphs in Search Engines on Human Perception}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-    % EXPERIENCE
-    \section{\mysidestyle Professional\\Experience}
 
-    % FB
-    \textbf{Facebook} \hfill Menlo Park, CA
-    \\
-    \textsl{Software Engineering Intern} \hfill \textsl{May 2020 -- Aug 2020}
-    \\
-    •   Incoming summer 2020.
-    % 
-    \\ \vspace{-1.5mm} \\
-    % 
-    % LRC
-    \textbf{University of Massachusetts, Amherst} \hfill Amherst, MA
-    \\
-    \textsl{Tech Lead} \hfill \textsl{Sept 2019 -- Present}
-    \\
-    •	Working as the lead developer to maintain, debug and refactor legacy code for the proprietary Tutoring Scheduling Platform for a staff of over 400 which is used by over 4000 students per week.
-    \\
-    •	Redesigned the website to be more responsive on mobile devices and perform better with slower internet connections and removed redundancies from the SQL database and tuned it for 30\% faster query speeds.
-    % 
-    \\ \vspace{-1.5mm} \\
-    % 
-    % Uber
-    \textbf{Uber} \hfill San Francisco, CA
-    \\
-    \textsl{Software Engineering Fellow} \hfill \textsl{April 2019 -- Dec 2019}
-    \\
-    •	Part of Uber’s Career Prep (Hidden Genius) Program, accepted as one of 30 fellows selected from a pool of over 800 applicants based on leadership potential, technical skills, and personal achievement.
-    \\
-    •	Attended regular workshops taught by Uber engineers at various offices and worked on projects with the backend, ATG, and payments teams.
-    % 
-    \\ \vspace{-1.5mm} \\
-    % 
-    % RA
-    \textbf{University of Massachusetts, Amherst} \hfill Amherst, MA
-    \\
-    \textsl{Resident Assistant} \hfill \textsl{Aug 2018 -- Present}
-    \\
-    •	Managed a floor of 95 first-year students and helped them with their transition to college.
-    \\
-    •	Worked on community development, student learning initiatives, and incident response. 
-    \\
-    •	Designed awareness posters and acted as a social and academic role-model. Facilitated floor meetings and roommate conflicts.
-    % % 
-    % \\ \vspace{-1.5mm} \\
-    % % 
-    % % Greeno
-    % \textbf{Greeno Sub Shop} \hfill Amherst, MA
-    % \\
-    % \textsl{Co-Manager} \hfill \textsl{Sept 2017 -- Aug 2019}
-    % \\
-    % •	Wrote Python scripts to automate and monitor payroll processes and sales.
-    % \\
-    % •	Redesigned the website to be user-friendly, used analytics to track user flow and improve design.
-    % \\
-    % •	Worked on the logistics team and coordinated dates and schedules along with security access.
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Facebook}{Menlo Park, CA}
+      {Software Engineering Intern}{May 2020 -- Aug 2020}
+      \resumeItemListStart
+        \resumeItemNew
+          {Collaborated with 4 teams to create a new full-stack web application in the People Engineering org to automate recruiting workflows and integrated it with existing internal tools and products.}
+        \resumeItemNew
+          {Productionized new entities for the ORM in PHP, used React JS and GraphQL to build the front-end and surface data.}
+        \resumeItemNew
+          {Setup cron jobs to compute usage stats on various internal tools, and participated in the internal Hackathon.}
+        % \resumeItemNew
+        %   {Participated in the internal Hackathon to work on a project to connect prospective applicants to Facebook engineers.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Uber}{San Francisco, CA}
+      {Software Engineering Fellow}{Apr 2019 -- Dec 2019}
+      \resumeItemListStart
+            \resumeItemNew
+            {Part of Uber’s Career Prep (Hidden Genius) Program, accepted as one of 30 fellows selected from a pool of over 800 applicants based on leadership potential, technical skills, and personal achievement.}
+            \resumeItemNew
+            {Attended regular workshops taught by Uber engineers at various offices and worked on projects with the backend, ATG, and payments teams.}
+      \resumeItemListEnd
+      
+     \resumeSubheading
+    {BUILD UMass}{Amherst, MA}
+    {Co-Founder \& President} {Sept 2018 -- Present}
+    \resumeItemListStart
+        \resumeItemNew
+          {Started the organization with a focus on software engineering and web development for non-profits and small businesses and grew it to over 50 members in 2 years.}
+        \resumeItemNew
+          {Currently supporting 5 teams with product management, execution strategies, and code reviews.}
+        \resumeItemNew
+          {Led technical workshops for over 200 students at various hackathons and organized several events.}
+    \resumeItemListEnd
     
-    
-    % ACTIVITIES
-    \section{\mysidestyle Activities}
+    \resumeSubheading
+      {University of Massachusetts, Amherst}{Amherst, MA}
+      {Tech Lead}{Sept 2019 -- Present}
+      \resumeItemListStart
+            \resumeItemNew
+            {Working as the lead developer to maintain, debug and refactor legacy code for the proprietary Tutoring Scheduling Platform for a staff of over 500 which is used by over 4000 students per week.}
+            \resumeItemNew
+            {Redesigned the website to be more responsive on mobile devices and perform better with slower internet connections and removed redundancies from the MySQL database and tuned it for 30\% faster query speeds.}
+      \resumeItemListEnd
+    \resumeSubheadingNew{Resident Assistant}{Aug 2018 -- Present}
+      \resumeItemListStart
+            \resumeItemNew
+            {Managed a floor of 95 first-year students and helped them with their transition to college.}
+            \resumeItemNew
+            {Worked on community development, student learning initiatives, and incident response.}
+            \resumeItemNew
+            {Designed awareness posters, acted as a social and academic role-model, facilitated meetings and roommate conflicts.}
+      \resumeItemListEnd
+      
+    %  \resumeSubheading
+    %   {University of Massachusetts, Amherst}{Amherst, MA}
+    %   {Resident Assistant}{Aug 2018 -- Present}
+    %   \resumeItemListStart
+    %         \resumeItemNew
+    %         {Managed a floor of 95 first-year students and helped them with their transition to college.}
+    %         \resumeItemNew
+    %         {Worked on community development, student learning initiatives, and incident response.}
+    %         \resumeItemNew
+    %         {Designed awareness posters and acted as a social and academic role-model. Facilitated floor meetings and roommate conflicts.}
+    %   \resumeItemListEnd
 
-    % BUILD
-    \textbf{BUILD UMass} \hfill Amherst, MA
-    \\
-    \textsl{Co-founder \& President} \hfill \textsl{Sept 2018 -- Present}
-    \\
-    •	Started the organization with a focus on software engineering and web development for non-profits and small businesses and grew it to over 40 members in 3 semesters.
-    \\
-    •	Currently supporting 5 teams with product management, execution strategies, and code reviews.
-    \\
-    •	Led technical workshops for over 200 students at various hackathons and organized several events.
-    % 
-    \\ \vspace{-1.5mm} \\
-    % 
-    % CSB
-    \textbf{UMass Center for Student Business} \hfill Amherst, MA
-    \\
-    \textsl{Co-Manager} \hfill \textsl{Sept 2017 -- Aug 2019}
-    \\
-    •	Wrote Python scripts to automate and monitor payroll processes and sales.
-    \\
-    •	Redesigned the website to be user-friendly, used analytics to track user flow and improve design.
-    \\
-    •	Worked on the logistics team and coordinated dates and schedules along with security access.
+  \resumeSubHeadingListEnd
+  
+%-----------ACTIVITIES-----------------
+% \section{Activities}
+%   \resumeSubHeadingListStart
 
-    % PROJECTS
-    \section{\mysidestyle Projects}
+        
+    % \resumeSubheading
+    %     {UMass Center for Student Business}{Amherst, MA}
+    %     {Co-Manager} {Sept 2018 -- Present}
+    %     \resumeItemListStart
+    %         \resumeItemNew
+    %           {Wrote Python scripts to automate and monitor payroll processes and sales.}
+    %         \resumeItemNew
+    %           {Redesigned the website to be user-friendly, used analytics to track user flow and improve design.}
+    %         \resumeItemNew
+    %           {Worked on the logistics team and coordinated dates and schedules along with security access.}
+    %     \resumeItemListEnd
+%   \resumeSubHeadingListEnd
 
-    \textbf{Survey Master} \hfill \textsl{Dec 2019}
-    \\
-    Worked in a scrum team of 8 to build an end-to-end survey platform where people can create, take, and analyze surveys. Used React.js for the frontend and Python (Flask) for the backend API.
-    % 
-    \\ \vspace{-1.5mm} \\
-    % 
-    \textbf{HR Bot} \hfill \textsl{Mar 2019}
-    \\
-    Designed a slackbot using Node.js to keep track of brownie points a member may receive each week. Uses basic NLP techniques to parse user messages and keeps track of points each member receives.
 
-    % SKILLS
-    \section{\mysidestyle Skills}
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/saiskee/project-elena}{EleNa: Elevation-based Navigation System}}
+      {EleNa is a system that allows users to calculate routes and optimize them based on elevation gain and steepness. Used a strategy design pattern with a React frontend with a Flask backend, along with Deck.gl for visualizations.}
+  
+    \resumeSubItem{\href{https://github.com/nilay1808/ultimate-survey}{Survey Master}}
+      {Worked in a scrum team of 8 to build an end-to-end survey platform where people can create, take, and analyze surveys. Used React for the front-end UI and Python (Flask) for the backend API along with MongoDB as the NoSQL database.}
+  \resumeSubHeadingListEnd
 
-    \textbf{Programming:} Java, Python, JavaScript, C, Node.js, React.js, SQL, PHP, HTML, CSS, \LaTeX 
-    \\
-    \textbf{Development:} Git, Latex, FileZilla, Google Cloud, MongoDB, Heroku, Agile, Scrum
-    \\
-    \textbf{Languages:} English, Hindi, Marathi, German
-\end{resume}
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Java, Python, JavaScript, PHP (Hack), Typescript, C, HTML, CSS, \LaTeX}
+     \\
+     \textbf{Frameworks}{: Node.js, React, Deck.gl, GraphQL, MySQL, PostgreSQL, NoSQL, Object-relational mapping}
+     \\
+     \textbf{Development}{: Git, Bash scripting, Unit testing, Async programming, REST API's, Agile, Scrum}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
 \end{document}
